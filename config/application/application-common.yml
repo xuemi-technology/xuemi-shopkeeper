@@ -1,16 +1,23 @@
+jasypt:
+  encryptor:
+    password: 123456
 spring:
+  application:
+    name: user-service
   jpa:
       hibernate:
        ddl-auto: update
       show-sql: true
   datasource:
       driver-class-name: com.mysql.jdbc.Driver
-      username: root
-      password: 730805
+      username: ENC(S1xjNHdDoqCPa502kdymmw==)
+      password: ENC(0oZkUcl3M8agb3yiC+sRwA==)
       url: jdbc:mysql://localhost:3306/mall?useUnicode=true&amp;characterEncoding=UTF-8
-#     http传输默认字符集设置
   http:
     encoding:
       charset: UTF-8
       force: true
       enabled: true
+#    服务注册
+  zipkin:
+    base-url: http://localhost:8064
