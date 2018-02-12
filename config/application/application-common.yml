@@ -21,3 +21,8 @@ spring:
 #    服务注册
   zipkin:
     base-url: http://localhost:8064
+#  服务集群注册点
+eureka:
+  client:
+    service-url:
+      defaultZone: http://peer1:8082/eureka
