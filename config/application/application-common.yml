@@ -1,8 +1,12 @@
-  http:
+http:
     encoding:
       charset: UTF-8
       force: true
       enabled: true
 #    服务注册
-  zipkin:
+zipkin:
     base-url: http://localhost:8064
+eureka:
+    client:
+      service-url:
+        defaultZone: http://peer1:8082/eureka
