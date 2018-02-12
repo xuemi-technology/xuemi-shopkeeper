@@ -1,21 +1,8 @@
-http:
-    encoding:
-      charset: UTF-8
-      force: true
-      enabled: true
-#    服务注册
-zipkin:
-    base-url: http://localhost:8064
 eureka:
-    client:
-      service-url:
-        defaultZone: http://peer1:8082/eureka
-spring:
-  http:
-    encoding:
-      charset: UTF-8
-      force: true
-      enabled: true
+  client:
+    service-url:
+      defaultZone: http://peer1:8082/eureka
+     http传输默认字符集设置
 jasypt:
   encryptor:
     password: 123456
@@ -31,3 +18,11 @@ spring:
       username: ENC(S1xjNHdDoqCPa502kdymmw==)
       password: ENC(0oZkUcl3M8agb3yiC+sRwA==)
       url: jdbc:mysql://localhost:3306/mall?useUnicode=true&amp;characterEncoding=UTF-8
+  http:
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true
+#    服务注册
+  zipkin:
+    base-url: http://localhost:8064
