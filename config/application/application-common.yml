@@ -10,3 +10,9 @@ eureka:
     client:
       service-url:
         defaultZone: http://peer1:8082/eureka
+spring:
+  http:
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true
